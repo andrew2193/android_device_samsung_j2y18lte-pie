@@ -368,7 +368,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc \
-    init.j4primelte.rc \
+    init.bloatware.rc \
     init.wifi.rc \
     fstab.qcom \
     ueventd.qcom.rc

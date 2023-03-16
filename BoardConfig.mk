@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/samsung/j4primelte
+DEVICE_PATH := device/samsung/j2y18lte
 BOARD_VENDOR := samsung
 
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -180,7 +180,7 @@ BOARD_VNDK_RUNTIME_DISABLE := true
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # OTA Assert
-TARGET_OTA_ASSERT_DEVICE := j4primelte,j6primelte,j4corelte
+TARGET_OTA_ASSERT_DEVICE := j4primelte,j6primelte,j4corelte,j2y18lte
 
 # WiFi
 BOARD_HAS_QCOM_WLAN := true
