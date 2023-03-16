@@ -51,7 +51,7 @@ on fs
     wait /dev/block/bootdevice/by-name/persist
     mkdir /mnt/vendor/persist 0771 system system
 #   mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist nosuid nodev noatime noauto_da_alloc,discard,journal_async_commit,errors=panic
-    mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
+#   mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
     mkdir /mnt/vendor/persist/rfs 0700 system system
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/bms 0700 root system

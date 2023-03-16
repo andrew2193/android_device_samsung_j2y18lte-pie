@@ -31,15 +31,13 @@
 #
 start_sensors()
 {
-    sscrpcd_status=`getprop init.svc.vendor.sensors`
+    mkdir -p /mnt/vendor/persist/sensors
+    mkdir -p /persist/sensors
+    touch /mnt/vendor/persist/sensors/sensors_settings
+    touch /persist/sensors/sensors_settings
+    chmod -h 664 /mnt/vendor/persist/sensors/sensors_settings
     chmod -h 664 /persist/sensors/sensors_settings
     chown -h -R system.system /persist/sensors
-    start vendor.sensors.qti
-
-    # Only for SLPI
-    if [ -c /dev/msm_dsps -o -c /dev/sensors ] && [ -z "$sscrpcd_status" ]; then
-        start vendor.sensors
-    fi
 }
 
 start_sensors
